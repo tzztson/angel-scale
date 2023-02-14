@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/common/feature",
+  "sourceRoot": "libs/common/feature/src",
+  "prefix": "angelscale-app",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/common/feature"],
+      "options": {
+        "jestConfig": "libs/common/feature/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/common/feature/src/**/*.ts",
+          "libs/common/feature/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

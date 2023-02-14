@@ -1,0 +1,19 @@
+<section class="container mx-auto">
+  <div class="flex flex-col py-12 items-center">
+    <p class="text-[#333333] font-bold text-[40px] text-center"><span class="text-[#2b3384]">Client </span>Testimonials
+    </p>
+    <p class="font-medium text-center text-sm text-[#00171BB2] py-4">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    </p>
+    <div class="flex justify-center">
+      <div *ngFor="let testimonial of testimonials" class="flex flex-col items-center relative">
+          <img src="/assets/images/icons/testimonial-container.svg" class="" alt="" />
+          <p class="absolute top-12 left-12 mr-12 text-lg">{{testimonial.evaluation}}</p>
+          <img src={{testimonial.image}}  alt=""/>
+          <p class="font-semibold text-[22px] text-[#0C3232]">{{testimonial.name}}</p>
+          <p class="font-light text-sm text-[#00171BB2] py-1">{{testimonial.title}}</p>
+          <img src="/assets/images/icons/testimonial-star.svg"  alt=""/>
+      </div>
+    </div>
+  </div>
+</section>

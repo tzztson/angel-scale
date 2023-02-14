@@ -1,0 +1,25 @@
+<section class="container mx-auto">
+  <div class="flex py-12 gap-4">
+    <div class="flex flex-col flex-[1_1_40%]">
+      <div>
+        <p class="font-extrabold text-[40px]">Any questions?</p>
+        <p class="font-extrabold text-[40px] text-[#2B3384]">We got you.</p>
+      </div>
+      <p class="py-2 font-normal text-lg">Angel Scale is committed to helping startup and pre-startup entrepreneurs navigate the path from ideation to
+        activation from startup, to profitability,and beyond. </p>
+      <div class="mt-4 rounded-md flex items-center gap-2 bg-white w-48">
+        <p class="text-[#2B3384] font-semibold">More FAQs</p>
+        <img src="/assets/images/icons/purple-arrow.svg" class="purple-arrow" alt="" />
+      </div>
+    </div>
+    <div class="flex flex-col flex-[1_1_60%] ">
+      <div *ngFor="let faq of faqs; let indexOfelement=index;" class="border-b-2 border-[#001F691A] py-2 flex flex-col gap-4">
+        <div class="flex justify-between " (click)="openMessage(indexOfelement)"> 
+          <p class="text-[#00171B] text-xl font-medium">{{faq.title}}</p>
+          <img src={{faq.image}} alt="" />
+        </div>
+        <p *ngIf="faq.visible" class="text-[#00171BB2] text-lg font-normal">{{faq.content}}</p>
+      </div>
+    </div>
+  </div>
+</section>

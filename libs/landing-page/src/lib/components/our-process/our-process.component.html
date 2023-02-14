@@ -1,0 +1,29 @@
+<section class="py-12">
+  <div class="flex flex-col py-6 items-center">
+    <p class="text-[#333333] font-bold text-[40px] text-center">Our <span class="text-[#2b3384]">Process</span></p>
+    <p class="font-medium text-center text-sm text-[#00171BB2] py-4">
+      No matter where you are in your startup process, if you’re looking for guidance, aid in marketing strategies,
+      <br />
+      help building your digital presence, or a powerful content strategy vetted and customized to your needs,
+      Angel-Scale is ready to help.
+
+    </p>
+  </div>
+  <div class="flex">
+    <div class="flex flex-col items-center flex-[1_1_60%] bg-[#EDF1F7B2] py-20 pl-72 pr-48 gap-12 relative">
+      <div *ngFor="let process of processes;" class="flex gap-8 justify-center items-center">
+        <img src={{process.image}} class="w-16 h-16" alt="" />
+        <div class="flex flex-col gap-3">
+          <p class="font-bold text-[22px] tracking-wide">{{process.title}}</p>
+          <p class="font-normal text-[14px] tracking-wide">{{process.content}}</p>
+        </div>
+      </div>
+      <div class="-right-[500px] absolute">
+        <img src="/assets/images/icons/process-discussion.svg" class="" alt="" />
+      </div>
+    </div>
+    <div class=" flex-[1_1_40%]">
+    </div>
+  </div>
+  <div></div>
+</section>

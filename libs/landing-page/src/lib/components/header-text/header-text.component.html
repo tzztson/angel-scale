@@ -1,0 +1,12 @@
+<div class="header-text">
+  <h1 class="title mb-3"><span>{{title}}</span> {{subtitle}}</h1>
+  <ng-content></ng-content>
+  <angelscale-app-button
+    [routerLink]="buttonLink"
+    [className]="'bttn'"
+    class="mt-4"
+  >
+    {{buttonText}}
+    <i class="fa fa-arrow-right"></i>
+  </angelscale-app-button>
+</div>

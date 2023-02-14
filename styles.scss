@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.service-shadow {
+    box-shadow: 2.38425px 2.38425px 22.253px rgba(55, 55, 55, 0.1);
+}
+
+.purple-arrow {
+    width: 16px !important;
+    height: 16px !important;
+}
+
+.consultant-rate_star {
+    width: 160px !important;
+
+}
+
+
+.second-carousel .carousel-arrow-prev {
+    background-image: url('~/apps/public-web/src/assets/images/icons/consultant-prev.svg') !important;
+    top: 105% !important; 
+    left: 47% !important;
+    background-color: transparent !important;
+    opacity: 1 !important;
+}
+.second-carousel .carousel-arrow-next {
+    background-image: url('~/apps/public-web/src/assets/images/icons/consultant-next.svg') !important;
+    top: 105% !important; 
+    right: 47% !important;
+    background-color: transparent !important;
+    opacity: 1 !important;
+}
+
+.fixed-header {
+    height: 320px;
+}

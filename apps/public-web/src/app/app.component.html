@@ -1,0 +1,6 @@
+<ng-container *ngIf="!isProduction">
+  <div class="alert alert-warning alert-dismissible fade show announcement-top-bar" role="alert">NOTE: This is the QA environment for testing purposes and may be unstable at times</div>
+</ng-container>
+<angelscale-app-layout>
+  <router-outlet></router-outlet>
+</angelscale-app-layout>

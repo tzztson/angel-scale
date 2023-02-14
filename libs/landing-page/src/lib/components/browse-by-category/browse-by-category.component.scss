@@ -1,0 +1,39 @@
+
+
+:host {
+  .categroies {
+    display: flex;
+    flex-direction: row;
+
+  }
+}
+
+angelscale-app-button ::ng-deep {
+
+  .btn {
+    box-shadow: 0 4px 8px 0 rgba(97, 95, 95, 0.2), 0 6px 20px 0 rgba(116, 114, 114, 0.19);
+    text-align: left;
+    border-radius: 20px !important;
+    flex-direction: row;
+    width: 21%;
+    margin: 1%;
+    border: none;
+  }
+
+  .content-text {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+    margin: 15px 20px 10px 0px;
+  }
+
+  h4 {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+}

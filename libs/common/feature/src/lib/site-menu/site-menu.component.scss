@@ -1,0 +1,12 @@
+:host {
+  div * {
+    margin: 0 1rem !important;
+  }
+
+  a {
+    &:hover {
+      border-bottom: 1px solid var(--as-blue);
+      padding-bottom: 14px;
+    }
+  }
+}

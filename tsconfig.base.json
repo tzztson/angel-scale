@@ -1,0 +1,39 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "ES2022",
+    "useDefineForClassFields": false,
+    "lib": ["ES2022", "dom"],
+    "paths": {
+      "@angelscale-app/common-material": ["libs/common-material/src/index.ts"],
+      "@angelscale-app/common/data-access": [
+        "libs/common/data-access/src/index.ts"
+      ],
+      "@angelscale-app/common/feature": ["libs/common/feature/src/index.ts"],
+      "@angelscale-app/common/ui": ["libs/common/ui/src/index.ts"],
+      "@angelscale-app/landing-page": ["libs/landing-page/src/index.ts"],
+      "@angelscale-app/layout": ["libs/layout/src/index.ts"]
+    }
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
+}

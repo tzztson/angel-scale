@@ -1,0 +1,37 @@
+:host {
+  mat-divider {
+    background-color: #001F69;
+    height: 1px;
+    width: 100%;
+    opacity: 0.3;
+  }
+  .search {
+    border: none;
+    background-color: #e7eaef;
+    border-radius: 2rem;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    width: 100%;
+    min-width: 300px;
+
+    .search-query {
+      margin-right: 5px;
+    }
+
+    input {
+      border: none;
+      background-color: #e7eaef;
+      border-radius: 0;
+      width: 100%;
+      font-size: 14px;
+      border-right: 1px solid #BECADB;
+      padding: 5px 0px 5px 20px;
+    }
+
+    .search-icon {
+      color: #BECADB;
+      position: absolute;
+      margin-top: 2px;
+      font-size: 18px;
+    }
+  }
+}

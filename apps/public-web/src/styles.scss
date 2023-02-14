@@ -1,0 +1,62 @@
+/* You can add global styles to this file, and also import other style files */
+@import url(https://fonts.googleapis.com/css2?family=Lexend:ital,wght@0,300;0,400;0,600;1,400&family=Playfair+Display:wght@400;600&display=swap);
+
+:root {
+  --bs-primary: #BECADB;
+  --bs-secondary: #2B3384;
+  --bs-alternate: #8492A6;
+  --bs-bg-color: #ffffff;
+
+  --as-gray: #8492A6;
+  --as-white: #ffffff;
+  --as-text-color: #2d2e2e;
+  --as-blue: #2B3384;
+  --as-link-blue: #2B3384;
+}
+
+body {
+  font-family: "Lexend", sans-serif;
+  font-size: 14px;
+  line-height: 1.57143;
+  font-weight: 400;
+  color: var(--as-text-color);
+}
+
+a {
+  color: var(--as-text-color);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--as-link-blue);
+  }
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--as-gray);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: var(--as-gray);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: var(--as-gray);
+}
+
+h1.title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+
+  span {
+    color: var(--as-blue);
+  }
+
+  @media (max-width: 424px) {
+    width: auto;
+  }
+}
+
+.main-content {
+  width: 100%;
+}

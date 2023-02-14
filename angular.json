@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "projects": {
+    "common-data-access": "libs/common/data-access",
+    "common-feature": "libs/common/feature",
+    "common-ui": "libs/common/ui",
+    "landing-page": "libs/landing-page",
+    "layout": "libs/layout",
+    "public-web": "apps/public-web",
+    "public-web-e2e": "apps/public-web-e2e"
+  }
+}

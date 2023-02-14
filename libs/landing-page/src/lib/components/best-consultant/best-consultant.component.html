@@ -1,0 +1,47 @@
+<section class="container mx-auto ">
+  <div class="flex flex-col py-12 items-center">
+    <p class="text-[#2b3384] font-bold text-[40px] text-center">The best Consultants <span class="text-[#333333]">you’ve
+        never met</span></p>
+    <p class="font-medium text-center text-sm text-[#00171BB2] py-4">
+      Each Angel Scale consultant specializes in a different aspect of business growth and development. <br />
+      Find the consultant with the skills you need and get in touch with them to set up a personal consultation.
+    </p>
+    <carousel [cellWidth]="'100%'" [objectFit]="'contain'" [margin]="40" [height]="520" [autoplay]="true"
+      [cellsToShow]="4" [loop]="true" class="second-carousel">
+      <div *ngFor="let consultant of bestConsultants;" class="carousel-cell">
+        <div class="flex flex-col w-full">
+          <img src={{consultant.image}} class="fixed-header" alt="" />
+          <div class="service-shadow px-4 py-4 flex flex-col gap-2  rounded-b-xl">
+            <p class="text-2xl font-bold text-[#00171B]">{{consultant.title}}</p>
+          </div>
+          <div>
+          </div>
+        </div>
+      </div>
+    </carousel>
+  </div>
+  <div class="flex pt-12 pb-36 gap-4">
+    <div class="relative flex-[1_1_50%]">
+      <img src="assets/images/icons/best-discussion.svg" alt="" />
+      <img src="assets/images/icons/best-credit.svg" class="absolute -bottom-24 right-12 " alt="" />
+    </div>
+    <div class="flex-[1_1_50%] flex gap-8 flex-col w-92">
+      <p class="font-bold text-[#111416] text-[36px] w-[460px]">
+        Get the help you need for your business
+      </p>
+      <p class="font-normal text-[#00171BB2] text-base w-[460px]">
+        We've got you covered from idea to delivery. Post your job and you'll
+        start getting proposals. Once you've found your expert, you can talk
+        timings, availability, and prices before going ahead.We've got you covered from idea to delivery. Post your job
+        and you'll
+        start getting proposals. Once you've found your expert, you can talk
+        timings, availability, and prices before going ahead
+      </p>
+      <button
+        class="bg-[#2B3384] text-white rounded- py-3 px-6 font-medium text-md flex justify-center items-center gap-2 rounded-[48px] w-64">
+        <span>Find consultants </span>
+        <img src="/assets/images/icons/arrow.svg" alt="" />
+      </button>
+    </div>
+  </div>
+</section>

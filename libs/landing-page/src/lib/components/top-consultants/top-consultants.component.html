@@ -1,0 +1,61 @@
+<section>
+  <div class="bg-[#F2F3F9CC]">
+    <div class=" container mx-auto">
+      <div class="flex flex-col pt-12 pb-24 items-center">
+        <p class="text-[#333333] font-bold text-[40px] text-center">Our Top <span
+            class="text-[#2b3384]">Consultants</span>
+        </p>
+        <p class="font-medium text-center text-sm text-[#00171BB2] py-4">
+          Each Angel Scale consultant specializes in a different aspect of business growth and development. <br />
+          Find the consultant with the skills you need and get in touch with them to set up a personal consultation.
+        </p>
+        <carousel [cellWidth]="'100%'" [objectFit]="'contain'" [margin]="40" [height]="520" [autoplay]="true"
+          [cellsToShow]="3" [loop]="true" class="second-carousel">
+          <div *ngFor="let consultant of consultants;" class="carousel-cell">
+            <div class="flex flex-col w-full">
+              <img src={{consultant.image}} class="fixed-header"  alt="" />
+              <div class="service-shadow px-4 py-4 flex flex-col gap-2  rounded-b-xl">
+                <p class="text-2xl font-bold text-[#00171B]">{{consultant.name}}</p>
+                <p class="text-lg text-[#00171BB2]">{{consultant.title}}</p>
+                <div class="flex gap-2 items-center">
+                  <img src="/assets/images/icons/consultant-rate_star.svg" class="consultant-rate_star" alt="" />
+                  <span class="font-medium text-[#00171BB2] text-lg">(132 reviews)</span>
+                </div>
+              </div>
+              <div>
+              </div>
+            </div>
+          </div>
+        </carousel>
+      </div>
+    </div>
+  </div>
+  <div class="container mx-auto my-20 relative w-full">
+    <img src="/assets/images/icons/consultant-world_map.svg" class="w-full" alt="" />
+    <div class="flex absolute top-24 left-24">
+      <div class="flex-[1_1_100%] flex flex-col gap-8">
+        <div class="flex gap-4 items-start">
+          <img src="/assets/images/icons/consultant-star.svg" class="py-2" alt="" />
+          <div class="flex flex-col gap-2">
+            <p class="text-white font-bold text-[32px]">No cost until you hire</p>
+            <p class="text-white font-medium text-base">As business owners, marketers, and entreprenuers ourselves,
+              let our experience help your small business or startup.</p>
+          </div>
+        </div>
+        <div class="flex gap-4 items-start">
+          <img src="/assets/images/icons/consultant-star.svg" class="py-2" alt="" />
+          <div class="flex flex-col gap-2">
+            <p class="text-white font-bold text-[32px]">Proof of quality</p>
+            <p class="text-white font-medium text-base">Lorem Ipsum is simply dummy text of the printing and
+              typesetting industry.</p>
+          </div>
+        </div>
+        <button class="ml-12 mt-4 rounded-full py-3 px-6 flex justify-center items-center gap-2 bg-white w-48">
+          <p class="text-[#2B3384] font-semibold">Start here</p>
+          <img src="/assets/images/icons/purple-arrow.svg" class="purple-arrow" alt="" />
+        </button>
+      </div>
+      <div class="flex-[1_1_50%]"></div>
+    </div>
+  </div>
+</section>

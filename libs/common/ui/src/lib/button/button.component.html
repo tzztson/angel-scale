@@ -1,0 +1,27 @@
+<button
+  [className]="'btn ' + 'btn__' + className"
+  md-button
+  mat-fab
+  [ngStyle]="{
+    'background-color': buttonColor,
+    color: textColor,
+    width: width,
+    height: height
+  }"
+  (click)="onClick()"
+  [disabled]="isDisabled"
+  [type]="type"
+  mat-button
+>
+  <div class="content">
+    <div *ngIf="iconType" class="content-icon">
+      <mat-icon [ngStyle]="{ color: textColor }">{{
+        iconType
+      }}</mat-icon>
+    </div>
+    <div class="content-text">
+      <span *ngIf="buttonText">{{ buttonText }}</span>
+      <ng-content></ng-content>
+    </div>
+  </div>
+</button>

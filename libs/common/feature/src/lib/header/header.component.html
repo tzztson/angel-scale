@@ -1,0 +1,23 @@
+<header class="d-flex justify-content-between">
+  <section class="mr-auto pt-3">
+    <angelscale-app-site-menu></angelscale-app-site-menu>
+  </section>
+  <section class="d-flex justify-content-end">
+    <section class="p-2">
+      <div class="search d-flex flex-row">
+        <a href="#" class="search-icon">
+            <i class="fa fa-search"></i>
+        </a>
+        <input autocomplete="off" type="text" placeholder="Search" class="form-control search-query" min-length="4"  />
+        <mat-select>
+          <mat-option value="consultant">Consultant</mat-option>
+        </mat-select>
+      </div>
+    </section>
+    <section class="p-2 account">
+      <angelscale-app-button text="Login" class="mx-2"></angelscale-app-button>
+      <angelscale-app-button [className]="'bttn'" text="Sign Up"></angelscale-app-button>
+    </section>
+  </section>
+</header>
+<mat-divider class="mb-2"></mat-divider>

@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/common/data-access",
+  "sourceRoot": "libs/common/data-access/src",
+  "prefix": "angelscale-app",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/common/data-access"],
+      "options": {
+        "jestConfig": "libs/common/data-access/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/common/data-access/src/**/*.ts",
+          "libs/common/data-access/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

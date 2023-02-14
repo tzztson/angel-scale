@@ -1,0 +1,20 @@
+{
+  "projects": {
+    "default": "angelscale-web"
+  },
+  "targets": {
+    "angelscale-web": {
+      "hosting": {
+        "dev": [
+          "angel-scale-dev"
+        ],
+        "qa": [
+          "angel-scale-qa"
+        ],
+        "prod": [
+          "angelscale-web"
+        ]
+      }
+    }
+  }
+}
