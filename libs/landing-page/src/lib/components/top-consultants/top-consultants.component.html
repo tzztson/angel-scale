@@ -1,6 +1,6 @@
 <section>
-  <div class="bg-[#F2F3F9CC]">
-    <div class=" container mx-auto">
+  <div class="bg-[#F2F3F9CC] pb-64">
+    <div class=" container mx-auto px-12 max-sm:px-6">
       <div class="flex flex-col pt-12 pb-24 items-center">
         <p class="text-[#333333] font-bold text-[40px] text-center">Our Top <span
             class="text-[#2b3384]">Consultants</span>
@@ -9,8 +9,7 @@
           Each Angel Scale consultant specializes in a different aspect of business growth and development. <br />
           Find the consultant with the skills you need and get in touch with them to set up a personal consultation.
         </p>
-        <carousel [cellWidth]="'100%'" [objectFit]="'contain'" [margin]="40" [height]="520" [autoplay]="true"
-          [cellsToShow]="3" [loop]="true" class="second-carousel">
+        <carousel [cellWidth]="'100%'"  [height]="420" [cellsToShow]="showCells"  class="second-carousel">
           <div *ngFor="let consultant of consultants;" class="carousel-cell">
             <div class="flex flex-col w-full">
               <img src={{consultant.image}} class="fixed-header"  alt="" />
@@ -19,7 +18,7 @@
                 <p class="text-lg text-[#00171BB2]">{{consultant.title}}</p>
                 <div class="flex gap-2 items-center">
                   <img src="/assets/images/icons/consultant-rate_star.svg" class="consultant-rate_star" alt="" />
-                  <span class="font-medium text-[#00171BB2] text-lg">(132 reviews)</span>
+                  <span class="font-medium text-[#00171BB2] text-lg max-sm:text-sm">(132 reviews)</span>
                 </div>
               </div>
               <div>
@@ -30,7 +29,7 @@
       </div>
     </div>
   </div>
-  <div class="container mx-auto my-20 relative w-full">
+  <!-- <div class="container mx-auto my-20 relative w-full">
     <img src="/assets/images/icons/consultant-world_map.svg" class="w-full" alt="" />
     <div class="flex absolute top-24 left-24">
       <div class="flex-[1_1_100%] flex flex-col gap-8">
@@ -57,5 +56,5 @@
       </div>
       <div class="flex-[1_1_50%]"></div>
     </div>
-  </div>
+  </div> -->
 </section>

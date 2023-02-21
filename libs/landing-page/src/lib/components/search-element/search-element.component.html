@@ -1,0 +1,54 @@
+<section class="flex flex-col gap-4">
+  <div class="relative w-full flex items-center">
+    <input type="text"
+      class="outline-none bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-full   w-full px-4 py-[12px]"
+      placeholder="Search ..." />
+    <button>
+      <img src="/assets/images/icons/search-search.svg"
+        class="absolute inset-y-0 right-0 flex items-center pt-[6px] pr-[6px]" alt="" />
+    </button>
+  </div>
+  <div *ngFor="let searchElement of searchElements" class="py-6 px-8 max-sm:px-4 flex flex-col gap-4 shadow-xl border-2 border-gray-100 rounded-2xl">
+    <div class="flex items-center gap-4">
+      <img src={{searchElement.avatar}} class="w-16 h-16" alt="" />
+      <div class="w-full">
+        <div class="flex justify-between">
+          <div class="flex gap-2 items-center">
+            <p class="font-bold text-2xl text-[#121212] pr-4 max-sm:pr-0">{{searchElement.name}}</p>
+            <img src="/assets/images/icons/search-badge.svg" class="max-md:hidden w-6 h-6" alt="" />
+            <p class="text-[#2B3484] text-lg font-normal max-md:hidden">{{searchElement.rate}}</p>
+          </div>
+          <img src="/assets/images/icons/search-like.svg" class="max-lg:hidden w-10 h-10" alt="" />
+
+        </div>
+        <p class="font-normal text-lg text-[#121212] max-sm:hidden">{{searchElement.title}}</p>
+      </div>
+    </div>
+    <p class="max-sm:block hidden font-normal text-lg text-[#121212]">{{searchElement.title}}</p>
+    <div class="flex gap-12 max-lg:gap-4 max-md:flex-col">
+      <div class="flex gap-3 items-center">
+        <img src="/assets/images/icons/search-rate.svg" class="w-8 h-8" alt="" />
+        <p class="text-[#001E00] text-lg font-normal">${{searchElement.hourly}}.00/hr</p>
+      </div>
+      <div class="flex gap-3 items-center">
+        <img src="/assets/images/icons/search-earned.svg" class="w-8 h-8" alt="" />
+        <p class="text-[#001E00] text-lg font-normal">${{searchElement.earning}}K+ earned</p>
+      </div>
+      <div class="flex gap-3 items-center">
+        <img src="/assets/images/icons/search-location.svg" class="w-8 h-8" alt="" />
+        <p class="text-[#001E00] text-lg font-normal">{{searchElement.country}}</p>
+      </div>
+    </div>
+
+
+      <carousel [height]="48" [arrows]="false">
+        <div *ngFor="let item of searchElement.skills;" class="carousel-cell ">
+          <p 
+            class="px-4 py-2 rounded-full border-2 border-gray-100  bg-[#f3f5f9] text-[#646464] text-base font-normal">{{item}}
+        </p>
+        </div>
+      </carousel>
+
+    <p class="text-lg font-medium text-[#767676]">{{searchElement.bio}}</p>
+  </div>
+</section>

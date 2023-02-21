@@ -1,13 +1,12 @@
-<section class="container mx-auto ">
+<section class="container mx-auto px-12">
   <div class="flex flex-col py-12 items-center">
     <p class="text-[#333333] font-bold text-[40px] text-center">Our Top <span class="text-[#2b3384]">Services</span></p>
     <p class="font-medium text-center text-sm text-[#00171BB2] py-4">
       If it’s help with a business plan, advice on marketing, or general coaching on your business, <br />
       Angel Scale is here to help your business soar.
     </p>
-    <carousel [cellWidth]="'100%'" [objectFit]="'contain'" [margin]="40" [height]="520" [autoplay]="true"
-      [cellsToShow]="4" [dots]="true" [loop]="true">
-      <div *ngFor="let service of services;" class="carousel-cell">
+    <!-- <carousel  [cellWidth]="'100%'" [objectFit]="'contain'" [margin]="40" [autoplay]="true" [cellsToShow]="3" [dots]="true" [loop]="true">
+      <div *ngFor="let service of services;" class="carousel-cell ">
         <div class="flex flex-col w-full">
           <img src={{service.image}} class="w-full" alt="" />
           <div class="service-shadow px-4 py-4 flex flex-col gap-2  rounded-b-xl">
@@ -22,13 +21,13 @@
           </div>
         </div>
       </div>
-    </carousel>
+    </carousel> -->
     <button
       class="bg-[#2B3384] text-white mt-4 mb-36 py-3 px-6 font-medium text-md flex justify-center items-center gap-2 rounded-[48px] w-32">
       <span>View All</span>
       <img src="/assets/images/icons/arrow.svg" alt="" />
     </button>
-    <div class="w-full relative">
+    <!-- <div class="w-full relative">
       <img src="/assets/images/icons/afford-world.svg" class="w-full" alt="" />
       <img src="/assets/images/icons/afford-rate.svg" class="absolute -top-4 right-64" alt="" />
       <div class="flex flex-col absolute top-12 left-24 gap-2">
@@ -40,6 +39,6 @@
           <img src="/assets/images/icons/purple-arrow.svg" class="purple-arrow" alt="" />
         </button>
       </div>
-    </div>
+    </div> -->
   </div>
 </section>

@@ -24,19 +24,29 @@ body {
 
 .second-carousel .carousel-arrow-prev {
     background-image: url('~/apps/public-web/src/assets/images/icons/consultant-prev.svg') !important;
-    top: 105% !important; 
-    left: 47% !important;
+    top: calc(100% + 3rem) !important;
+    left: calc(50% - 3rem) !important;
     background-color: transparent !important;
     opacity: 1 !important;
 }
+
 .second-carousel .carousel-arrow-next {
     background-image: url('~/apps/public-web/src/assets/images/icons/consultant-next.svg') !important;
-    top: 105% !important; 
-    right: 47% !important;
+    top: calc(100% + 3rem) !important;
+    right: calc(50% - 3rem) !important;
     background-color: transparent !important;
     opacity: 1 !important;
 }
 
 .fixed-header {
-    height: 320px;
+    height: auto !important;
+}
+
+
+.carousel-cells {
+    height: auto !important;
+}
+
+.carousel-cell {
+    height: auto !important;
 }

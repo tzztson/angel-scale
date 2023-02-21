@@ -25,6 +25,11 @@ import { HighQualityConsultantComponent } from './components/high-quality-consul
 import { ServicePaymentComponent } from './components/service-payment/service-payment.component';
 import { AskedQuestionComponent } from './components/asked-question/asked-question.component';
 
+import { SearchTableComponent } from './components/search-table/search-table.component';
+import { SearchElementComponent } from './components/search-element/search-element.component';
+import { SearchFilterComponent } from './components/search-filter/search-filter.component';
+
+import { SearchComponent } from './containers/search/search.component';
 import { FindAnAngelLandingPageComponent } from './containers/find-an-angel/find-an-angel.component';
 import { LandingComponent } from './containers/landing/landing.component';
 import { WhyAngelScaleLangingPageComponent } from './containers/why-angel-scale-langing-page/why-angel-scale-langing-page.component';
@@ -35,6 +40,7 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
 
 export const landingPageRoutes: Route[] = [
   { path: '', component: LandingComponent },
+  { path: 'search', component: SearchComponent },
   { path: 'find-an-angel', component: FindAnAngelLandingPageComponent },
   { path: 'why-angel-scale', component: WhyAngelScaleLangingPageComponent },
   { path: 'areas-of-expertise', component: WhyAngelScaleLangingPageComponent },
@@ -44,6 +50,7 @@ export const landingPageRoutes: Route[] = [
   imports: [CommonModule, CommonUiModule, CommonFeatureModule, RouterModule, IvyCarouselModule],
   declarations: [
     FindAnAngelLandingPageComponent,
+    SearchComponent,
     LandingComponent,
     HeaderTextComponent,
     LandingPageV1Component,
@@ -62,6 +69,9 @@ export const landingPageRoutes: Route[] = [
     ServiceWorkComponent,
     HighQualityConsultantComponent,
     ServicePaymentComponent,
+    SearchTableComponent,
+    SearchElementComponent,
+    SearchFilterComponent,
     AskedQuestionComponent,
     WhyAngelScaleLangingPageComponent,
   ],

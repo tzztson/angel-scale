@@ -1,0 +1,18 @@
+<section class="">
+  <div class="flex flex-col py-6 gap-4 border-2 border-gray-100 rounded-2xl px-4 ">
+    <P class="font-medium text-2xl text-[#121212] py-2 border-b border-gray-200">Filter By</P>
+    <div class="flex flex-col gap-2">
+      <div class="" *ngFor="let filter of filters; let indexOfelement=index;">
+        <div (click)="onToggle(indexOfelement)" class="flex justify-between">
+          <p class="font-normal text-xl text-[#121212]">{{filter.filterName}}</p>
+          <img src="/assets/images/icons/search-filter_down.svg" alt="" />
+        </div>
+        <div *ngIf="filter.visible" class="py-2 flex flex-col gap-2 ">
+          <p *ngFor="let item of filter.filterSub;" class="text-gray-500 text-lg">
+            {{item}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

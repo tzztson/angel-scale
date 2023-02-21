@@ -10,8 +10,6 @@ export class AskedQuestionComponent implements OnInit {
 
   faqs: FAQ[] = [];
 
-  visible = false;
-
   constructor() { }
 
   ngOnInit() {
@@ -44,7 +42,6 @@ export class AskedQuestionComponent implements OnInit {
   }
 
   openMessage(index: number) {
-    this.visible = !this.visible;
     this.faqs.map(ele => {
       ele.visible = false;
       ele.image = '/assets/images/icons/faq-plus.svg';
